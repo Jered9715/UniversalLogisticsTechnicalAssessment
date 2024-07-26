@@ -5,3 +5,10 @@ d:\development\ChipSecuritySystem\ChipSecuritySystem\obj\Debug\ChipSecuritySyste
 d:\development\ChipSecuritySystem\ChipSecuritySystem\obj\Debug\ChipSecuritySystem.csproj.CoreCompileInputs.cache
 d:\development\ChipSecuritySystem\ChipSecuritySystem\obj\Debug\ChipSecuritySystem.exe
 d:\development\ChipSecuritySystem\ChipSecuritySystem\obj\Debug\ChipSecuritySystem.pdb
+C:\Users\jered\source\repos\UniversalLogisticsTechnicalAssessment\ChipSecuritySystem\bin\Debug\ChipSecuritySystem.exe.config
+C:\Users\jered\source\repos\UniversalLogisticsTechnicalAssessment\ChipSecuritySystem\bin\Debug\ChipSecuritySystem.exe
+C:\Users\jered\source\repos\UniversalLogisticsTechnicalAssessment\ChipSecuritySystem\bin\Debug\ChipSecuritySystem.pdb
+C:\Users\jered\source\repos\UniversalLogisticsTechnicalAssessment\ChipSecuritySystem\obj\Debug\ChipSecuritySystem.csproj.AssemblyReference.cache
+C:\Users\jered\source\repos\UniversalLogisticsTechnicalAssessment\ChipSecuritySystem\obj\Debug\ChipSecuritySystem.csproj.CoreCompileInputs.cache
+C:\Users\jered\source\repos\UniversalLogisticsTechnicalAssessment\ChipSecuritySystem\obj\Debug\ChipSecuritySystem.exe
+C:\Users\jered\source\repos\UniversalLogisticsTechnicalAssessment\ChipSecuritySystem\obj\Debug\ChipSecuritySystem.pdb
