@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jered\\source\\repos\\UniversalLogisticsTechnicalAssessment\\ChipSecuritySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51C05190-D979-4646-A6FD-FCE1EAD5345D}|ChipSecuritySystem.csproj|c:\\users\\jered\\source\\repos\\universallogisticstechnicalassessment\\chipsecuritysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51C05190-D979-4646-A6FD-FCE1EAD5345D}|ChipSecuritySystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jered\\source\\repos\\UniversalLogisticsTechnicalAssessment\\ChipSecuritySystem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jered\\source\\repos\\UniversalLogisticsTechnicalAssessment\\ChipSecuritySystem\\Constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\jered\\source\\repos\\UniversalLogisticsTechnicalAssessment\\ChipSecuritySystem\\Constants.cs",
+              "RelativeDocumentMoniker": "Constants.cs",
+              "ToolTip": "C:\\Users\\jered\\source\\repos\\UniversalLogisticsTechnicalAssessment\\ChipSecuritySystem\\Constants.cs",
+              "RelativeToolTip": "Constants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T09:41:09.218Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jered\\source\\repos\\UniversalLogisticsTechnicalAssessment\\ChipSecuritySystem\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwC0AAAAgAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAHYAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T22:32:13.007Z",
               "EditorCaption": ""
