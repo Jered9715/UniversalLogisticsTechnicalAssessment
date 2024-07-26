@@ -11,44 +11,60 @@ namespace ChipSecuritySystem
     {
         static void Main(string[] args)
         {
-            //welcome Statement
+            /*
+                -Note From Dev-
+                    Use of code:
+                       - Must have one Token that starts with the color blue
+                    Strength of code: 
+                       - Chips do not have to be input in order for program to find a true combination
+                       - End shows the order that chips need to be set in place for 
+                    Weakness of code: 
+                       - Will not always solve to use the largest number of chips if there are two combinations possible to allow for entry.
+                       - Must have a blue start color on at least one chip. If I had more time I would like to add another Linq statement that would search the userChips list for the presense 
+                         of at least one chip thats start color is blue and one that has the end color of green          
+             */
+            
+            
+            
+            //Welcome Statement
+            Console.WriteLine("Welcome To The Chip Set Security System");
+            Console.WriteLine();
 
-
-            //ask for input from user for the number of chips that they have
+            //Define User Input
             Console.Write("Please enter the number of chips that you have: ");
             int numberOfUserChips = int.Parse(Console.ReadLine());
             Console.WriteLine();
-            Console.WriteLine($"Please enter the start and end color for each of the {numberOfUserChips} chips.");
+            Console.WriteLine($"Please enter the start and end color for each of the {numberOfUserChips} chips");
             Console.WriteLine();
              
-            //request input of colors for each chip labeling start and end
+            //List containing all user entered chips
             List<ColorChip> userChips = new List<ColorChip>();
 
+            //Request input from user based on the number of chips they have
             int chipFormFieldNumber = 1;
             for (int i = 0; i < numberOfUserChips; i++)
             {
-                string firstColor = "";
-                string secondColor = "";
-
+                string firstColorInput = "";
+                string secondColorInput = "";
 
                 Console.WriteLine($"Chip {chipFormFieldNumber}");
+
                 Console.Write($"Enter start color: ");
-                firstColor = Console.ReadLine();
+                firstColorInput = Console.ReadLine();
 
                 Console.Write($"Enter end color: ");
-                secondColor = Console.ReadLine();
+                secondColorInput = Console.ReadLine();
                 Console.WriteLine();
 
-                //Color startColor = (Color)Enum.Parse(typeof(Color), firstColor.Trim());
-                //Color endColor = (Color)Enum.Parse(typeof(Color), secondColor.Trim());
-                Color startColor = InputConversion(firstColor);
-                Color endColor = InputConversion(secondColor);
+                Color startColor = ConvertFromStringToEnum(firstColorInput);
+                Color endColor = ConvertFromStringToEnum(secondColorInput);
                 ColorChip enteredChip = new ColorChip(startColor, endColor);
                 userChips.Add(enteredChip);
                 chipFormFieldNumber++;
             }
             Console.WriteLine();
 
+            //Display Chips in left to right format in order they were input
             Console.Write("Your chips: ");
             foreach (ColorChip userChip in userChips)
             {
@@ -57,17 +73,21 @@ namespace ChipSecuritySystem
             Console.WriteLine();
 
 
-            //create valid chips list
+            //List used to show combination needed for unlocking
             List<ColorChip>validCombonationOfChips = new List<ColorChip>();
             
+            //Establish first chip Linq search
             ColorChip firstChip = (ColorChip)userChips.FirstOrDefault(c => c.StartColor == Color.Blue);
             validCombonationOfChips.Add(firstChip); 
             
-            //Defining Var For Linq Statement Sort
+            //Sets Linq var to first search
             Color chipEndColor = firstChip.EndColor;
+            
+            //Protection added for inifinite loop. This was placed to allow for error message to run and break out of loop
             int loopProtectionCount = 0;
             while (true)
             {
+
                 ColorChip Chip = (ColorChip)userChips.FirstOrDefault(c => c.StartColor == chipEndColor);
                 validCombonationOfChips.Add(Chip);
                 chipEndColor = Chip.EndColor;
@@ -77,7 +97,7 @@ namespace ChipSecuritySystem
                     Console.WriteLine();
                     Console.WriteLine("Can unlock master panel");
                     Console.WriteLine();
-                    Console.Write("Valid Combination: ");
+                    Console.Write("Valid combination: ");
                     foreach (ColorChip chip in validCombonationOfChips)
                     {
                         Console.Write($"[{chip}]");
@@ -87,19 +107,17 @@ namespace ChipSecuritySystem
                     break;
                 }
 
-                if (loopProtectionCount == 5 + numberOfUserChips)
+                if (loopProtectionCount > numberOfUserChips )
                 {
                     Console.WriteLine(Constants.ErrorMessage);
                     break;
                 }
             }
 
-
-
             Console.ReadLine();
 
 
-            Color InputConversion(string input) 
+            Color ConvertFromStringToEnum(string input) 
             {
                 switch (input.ToLower().Trim()) 
                 {
@@ -113,10 +131,10 @@ namespace ChipSecuritySystem
                         return Color.Yellow;
                     case "purple":
                         return Color.Purple;
-                    case "Orange":
+                    case "orange":
                         return Color.Orange;
                     default:
-                        Console.WriteLine("invalid color");
+                        Console.WriteLine("Invalid Input Default Color To Orange");
                         return Color.Orange;
                 }
             }
